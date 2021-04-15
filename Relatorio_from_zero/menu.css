@@ -10,17 +10,13 @@
     box-sizing: border-box
 }
 
-body{
-    background-color: white;
-    font-family: 'Nimbus';
-    font-weight: normal;
-    color: #000000;
-    font-style: normal;
-    font-size: 12pt;
+.divisao{
+    display: inline-flex;
+    border: 1px solid #000;
 }
 
-.pontos{
+.conteudo{
 
-    margin-right: 50px;
-    
+    padding: 0 50px;
+
 }
