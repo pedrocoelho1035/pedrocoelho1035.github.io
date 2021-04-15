@@ -5,12 +5,11 @@
     font-size: normal;
     font-style: normal;
 }
-body{
-    background-color: white;
-    font-family: 'Nimbus';
-    font-weight: normal;
+
+*{
+    box-sizing: border-box
 }
 
-.capa{
-    text-align: center;
+.sumario{
+    margin: 10px;
 }

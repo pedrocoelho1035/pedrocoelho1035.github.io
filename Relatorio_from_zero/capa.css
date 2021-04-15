@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Nimbus';
+    src: url('Fontes/NimbusRomNo9L-Med.otf') format('opentype');
+    font-size: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box
+}
+
+body{
+    background-color: white;
+    font-family: 'Nimbus';
+    font-weight: normal;
+}
+
+.capa{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.university{
+    padding: 10px 50px;
+    margin: 0;
+}
+
+.capa_top{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 85px;
+}
+
+#trabalho{
+    margin: 200px 0;
+}
+
+.capa_bottom{
+    margin: 100px 0;
+}
+
+#data{
+    margin-top: 200px;
+}
