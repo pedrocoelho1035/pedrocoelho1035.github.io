@@ -20,8 +20,33 @@
     </div>
     
     <div class="divisao conteudo">
-        <h1>Teste</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos amet, nemo ducimus voluptates hic ex enim nostrum ullam commodi eius repellat quia numquam sit distinctio quaerat maxime soluta quae quidem!</p>
+        <div>
+            <h2>2.3 Etapa 4</h2>
+            <ol>
+                <li>Qual opcode é usado para indicar uma solicitação?  E para uma resposta?</li>
+                <p>
+                    Opcode: request(1) ́e utilizado para solicitação.<br>
+                    Opcode: reply(2) ́e utilizado para resposta.
+                </p>
+                <li>Qual é o tamanho do cabeçalho ARP de uma solicitação? E o de uma resposta?</li>
+                <p>
+                    O tamanho do cabec ̧alho para uma solicitac ̧ ̃ao ́e o mesmo para a resposta,  estes quetem 28 Bytes (224 bits).
+                </p>
+                <li>Qual valor é indicado em uma solicitação para o endereço MAC de destino desconhecido?</li>
+                <p>
+                    Quando o enderec ̧o MAC de destino ́e desconhecido (Provavelmente estamos falandode um request) apenas ́e enviado o pacote com o enderec ̧o IP de destino e o enderec ̧oMAC (destino) ́e dado por 00:00:00:00:00:00.
+                </p>
+                <li>Qual é o valor do campo Ethernet Type que indica que o ARP é o protocolo de camada superior?</li>
+                <p>
+                    E indicado por Type: ARP (0x0806). <br>
+                    <img style="height: 500px; width: 800pxpx;" src="../Imagens/Ethr_type_wireshark.png" alt="Ethr_type_wireshark">
+                </p>
+                <li>A resposta ARP é transmitida por broadcast (como a solicitação ARP) ou não?</li>
+                <p>
+                    A resposta ARP (reply) n ̃ao ́e transmitida por Broadcast uma vez que o enderec ̧o dedestino ́e quem comec ̧ou a comunicac ̧ ̃ao, logo o pacote contˆem o enderec ̧o de IP e MACde ambos, diferente do request que n ̃ao continha o enderec ̧o MAC de destino e por issonecessita do Broadcast.
+                </p>
+            </ol>
+        </div>
     </div>
 </body>
 </html>

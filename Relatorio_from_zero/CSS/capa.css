@@ -1,7 +1,13 @@
 @charset "UTF-8";
 @font-face {
-    font-family: 'Nimbus';
+    font-family: 'Nimbus capa';
     src: url('../Fontes/NimbusRomNo9L-Med.otf') format('opentype');
+    font-size: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nimbus menu';
+    src: url('../Fontes/NimbusRomNo9L-Reg.otf') format('opentype');
     font-size: normal;
     font-style: normal;
 }
@@ -12,13 +18,18 @@
 
 body{
     background-color: white;
-    font-family: 'Nimbus';
     font-weight: normal;
 }
 
 .capa{
+    font-family: "Ninbus capa";
     text-align: center;
     margin: 40px 0;
+}
+
+.menu{
+    font-family: "Ninbus menu";
+    font-size: 12pt;
 }
 
 .university{

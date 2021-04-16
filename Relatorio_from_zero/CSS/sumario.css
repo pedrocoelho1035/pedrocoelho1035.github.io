@@ -1,10 +1,17 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'Nimbus';
-    src: url('../Fontes/NimbusRomNo9L-Med.otf') format('opentype');
+    src: url('../Fontes/NimbusRomNo9L-Reg.otf') format('opentype');
     font-size: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Nimbus menu';
+    src: url('../Fontes/NimbusRomNo9L-Reg.otf') format('opentype');
+    font-size: normal;
+    font-style: normal;
+}
+
 
 *{
     box-sizing: border-box
@@ -16,6 +23,10 @@ body{
     font-weight: normal;
     color: #000000;
     font-style: normal;
+    font-size: 12pt;
+}
+.menu{
+    font-family: "Nimbus menu";
     font-size: 12pt;
 }
 

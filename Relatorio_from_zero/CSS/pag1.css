@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'Nimbus';
-    src: url('../Fontes/NimbusRomNo9L-Med.otf') format('opentype');
+    src: url('../Fontes/NimbusRomNo9L-Reg.otf') format('opentype');
     font-size: normal;
     font-style: normal;
 }
@@ -15,4 +15,16 @@ body{
     font-family: 'Nimbus';
     font-weight: normal;
     text-align: justify;
+}
+h2{
+    font-weight: bold;
+    font-size: 13pt;
+}
+h3{
+    font-weight: bold;
+    font-size: 12pt;
+}
+p{
+    font-style: normal;
+    font-size: 12pt;
 }
