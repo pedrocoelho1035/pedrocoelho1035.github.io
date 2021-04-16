@@ -27,25 +27,25 @@
             <ol>
                 <li>Qual opcode é usado para indicar uma solicitação?  E para uma resposta?</li>
                 <p>
-                    Opcode: request(1) ́e utilizado para solicitação.<br>
-                    Opcode: reply(2) ́e utilizado para resposta.
+                    Opcode: request(1) é utilizado para solicitação.<br>
+                    Opcode: reply(2) é utilizado para resposta.
                 </p>
                 <li>Qual é o tamanho do cabeçalho ARP de uma solicitação? E o de uma resposta?</li>
                 <p>
-                    O tamanho do cabeçalho para uma solicitação ́e o mesmo para a resposta,  estes quetem 28 Bytes (224 bits).
+                    O tamanho do cabeçalho para uma solicitação é o mesmo para a resposta,  estes quetem 28 Bytes (224 bits).
                 </p>
                 <li>Qual valor é indicado em uma solicitação para o endereço MAC de destino desconhecido?</li>
                 <p>
-                    Quando o endereço MAC de destino ́e desconhecido (Provavelmente estamos falandode um request) apenas ́e enviado o pacote com o endereço IP de destino e o endereço MAC (destino) ́e dado por 00:00:00:00:00:00.
+                    Quando o endereço MAC de destino é desconhecido (Provavelmente estamos falandode um request) apenas é enviado o pacote com o endereço IP de destino e o endereço MAC (destino) é dado por 00:00:00:00:00:00.
                 </p>
                 <li>Qual é o valor do campo Ethernet Type que indica que o ARP é o protocolo de camada superior?</li>
                 <p>
-                    E indicado por Type: ARP (0x0806). <br>
+                    É indicado por "Type: ARP (0x0806)". <br>
                     <img style="height: 300px; width: 600px;" src="../Imagens/Ethr_type_wireshark.png" alt="Ethr_type_wireshark">
                 </p>
                 <li>A resposta ARP é transmitida por broadcast (como a solicitação ARP) ou não?</li>
                 <p>
-                    A resposta ARP (reply) não ́e transmitida por Broadcast uma vez que o endereço dedestino ́e quem começou a comunicação, logo o pacote contêm o endereço de IP e MAC de ambos, diferente do request que não continha o endereço MAC de destino e por isso necessita do Broadcast.
+                    A resposta ARP (reply) não é transmitida por Broadcast uma vez que o endereço dedestino é quem começou a comunicação, logo o pacote contêm o endereço de IP e MAC de ambos, diferente do request que não continha o endereço MAC de destino e por isso necessita do Broadcast.
                 </p>
             </ol>
         </div>
