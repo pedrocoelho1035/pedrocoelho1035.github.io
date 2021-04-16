@@ -6,17 +6,29 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Nimbus menu';
+    src: url('../Fontes/NimbusRomNo9L-Reg.otf') format('opentype');
+    font-size: normal;
+    font-style: normal;
+}
+
 *{
     box-sizing: border-box
 }
 
+.menu{
+    float: left;
+    font-family: "Nimbus menu";
+}
+
 .divisao{
-    display: inline-flex;
+    display: flex;
     border: 1px solid #000;
 }
 
 .conteudo{
-
+    max-width: 750px;
     padding: 0 50px;
 
 }
