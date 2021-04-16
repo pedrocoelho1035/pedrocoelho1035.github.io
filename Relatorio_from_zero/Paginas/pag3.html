@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/pag3.css">
     <title>Página 3</title>
 </head>
 <body>
@@ -20,11 +21,22 @@
     </div>
     
     <div class="divisao conteudo">
-        <h2>TCP</h2>
-        <h3>Etapa 1 e Etapa 2</h3>
-        <h3>Etapa 3</h3>
-        <h3>Etapa 4</h3>
-        <h3>Etapa 5</h3>
+        <div>
+            <h2>3. TCP</h2>
+            
+            <h3>3.1 Captura de um trace e Inspecionando o trace</h3>
+            <p>Aqui entra a descrição e os prints do processo</p>
+            <h3>3.2 Estrutura do segmento TCP</h3>
+            <p>Para mostrar sua compreensão do TCP, esboce uma figura do segmento TCP que você estudou. Sua figura deve mostrar a posição e o tamanho em bytes dos campos do cabeçalho TCP que você pôde observar usando o Wireshark. Não divida o campo Sinalizadores ou qualquer campo Opções e, se descobrir que alguns campos TCP compartilham um byte, agrupe-os. Como de costume, sua figura pode simplesmente mostrar a moldura como um retângulo longo e fino. Tente não olhar para a figura de um segmento TCP em seu texto ou na Internet; verifique-o depois para observar e investigar quaisquer diferenças.</p>
+            <h3>3.3 TCP: connection setup/teadown</h3>
+            <p>Desenhe um diagrama de sequência de tempo do handshake em seu trace, até e incluindo o primeiro pacote de dados (a solicitação HTTP GET) enviado por seu computador quando a conexão for estabelecida. Coloque seu computador no lado esquerdo e o servidor remoto no lado direito. Como de costume, o tempo passa de cima para baixo e as linhas cruzadas indicam os segmentos trocados.</p>
+            <h3>3.4 TCP: transferência de dados</h3>
+            <ol>
+                <li>Qual é a taxa de dados aproximada na direção do download em pacotes/segundo e bits/segundo, uma vez que a conexão TCP está funcionando bem?</li>
+                <li>Que porcentagem dessa taxa de download é conteúdo? Mostre seu cálculo. Para descobrir, veja um pacote de download típico; deve haver muitos pacotes de download grandes semelhantes. Você pode ver quanto tempo ele tem e quantos bytes de carga TCP ele contém.</li>
+                <li>Qual é a taxa de dados aproximada na direção de upload em pacotes/segundo e bits/segundo devido aos pacotes ACK?</li>
+            </ol>
+        </div>
     </div>
 </body>
 </html>

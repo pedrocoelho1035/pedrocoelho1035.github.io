@@ -9,3 +9,21 @@
 *{
     box-sizing: border-box
 }
+
+body{
+    font-family: 'Nimbus';
+    font-weight: normal;
+    text-align: justify;
+}
+h2{
+    font-weight: bold;
+    font-size: 13pt;
+}
+h3{
+    font-weight: bold;
+    font-size: 12pt;
+}
+p{
+    font-style: normal;
+    font-size: 12pt;
+}
