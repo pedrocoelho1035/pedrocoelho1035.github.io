@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Nimbus';
+    src: url('Fontes/NimbusRomNo9L-Med.otf') format('opentype');
+    font-size: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box
+}
+
+body{
+    font-family: 'Nimbus';
+    font-weight: normal;
+}
