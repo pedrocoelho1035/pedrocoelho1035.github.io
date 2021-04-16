@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'Nimbus';
-    src: url('Fontes/NimbusRomNo9L-Med.otf') format('opentype');
+    src: url('../Fontes/NimbusRomNo9L-Med.otf') format('opentype');
     font-size: normal;
     font-style: normal;
 }
@@ -44,3 +44,4 @@ body{
 #data{
     margin-top: 200px;
 }
+
