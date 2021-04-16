@@ -1,14 +1,14 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'Nimbus';
-    src: url('../fontes/NimbusRomNo9L-Med.otf') format('opentype');
+    src: url('../Fontes/NimbusRomNo9L-Med.otf') format('opentype');
     font-size: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Nimbus menu';
-    src: url('../fontes/NimbusRomNo9L-Reg.otf') format('opentype');
+    src: url('../Fontes/NimbusRomNo9L-Reg.otf') format('opentype');
     font-size: normal;
     font-style: normal;
 }
