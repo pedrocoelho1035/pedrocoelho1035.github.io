@@ -18,6 +18,7 @@
 }
 
 .menu{
+    min-width: 90px;
     float: left;
     font-family: "Nimbus menu";
 }
