@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="divisao menu">
-        <p>
+        <p style="text-indent: 0;">
             <a href="../relzero.html">Capa</a> <br>
             <a href="../Paginas/sumario.html">Sumário</a> <br>
             <a href="../Paginas/pag1.html">Página 1</a> <br>
@@ -30,12 +30,23 @@
             
             <h2>2. ARP</h2>
                 <h3>2.1 Captura de um trace e Inspecionando o trace</h3>
-                <p>Aqui entra a descrição e os prints do processo</p>
+                <p>
+                    Inicialmente foi acessado o prompt de comando do computador e utilizado o comando "<code>ipconfig -all</code>" para poder encontrar o endereço físico do adaptador de rede Wifi da interface de rede principal, este que posteriormente será usado como filtro para as trocas de ARP no trace.
+                </p>
+                <p>
+                    Em seguida foi utilizado o comando "<code>netstat -r</code>" para encontrar o endereço gateway padrão do computador.
+                </p>
+                <p>
+                    Com estas informações em mãos foi iniciado o Wireshark, e em seguida capturado um trace com o filtro de ARP. Para que alguma atividade fosse detectada, foram abertos o navegador e alguns sites.
+                </p>
+                <p>
+                    Uma vez que foi feita a captura, em seguida foi inserido o endereço MAC no filtro de exibição para que facilitasse a visulização e análise dos dados.
+                </p>
             
                 <h3>2.2 ARP request e reply</h3>
                 <p>Para verificar a sua compreensão de uma troca do ARP, desenhe uma figura que mostre a solicitação ARP e os pacotes de resposta enviados entre seu computador e o gateway padrão. Faça isso para o caso que examinamos de seu computador fazendo um ARP para o gateway padrão. Identifique um pacote com a solicitação e o outro com a resposta. Indique o sender e target MAC e endereço IP para cada pacote; você pode usar o Wireshark para inspecionar os pacotes para obter esses valores. Por fim, circule o endereço Ethernet procurado em seu desenho para mostrar de onde ele vem na troca.</p>
 
-                <p><img style="height: 500px; width: 600px;" src="../Imagens/ARP.gif" alt="Representação ARP"></p>
+                <p><img style="height: 350px; width: 450px;" src="../Imagens/ARP.gif" alt="Representação ARP"></p>
         </div>
     </div>
 </body>
