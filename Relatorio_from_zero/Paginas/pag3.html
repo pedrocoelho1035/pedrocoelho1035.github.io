@@ -10,12 +10,13 @@
 </head>
 <body>
     <div class="divisao menu">
-        <p>
+        <p style="text-indent: 0;">
             <a href="../relzero.html">Capa</a> <br>
             <a href="../Paginas/sumario.html">Sumário</a> <br>
             <a href="../Paginas/pag1.html">Página 1</a> <br>
             <a href="../Paginas/pag2.html">Página 2</a> <br>
             <a href="../Paginas/pag3.html">Página 3</a> <br>
+            <a href="../Paginas/pag4.html">Página 4</a> <br>
             <a href="../Paginas/pag_ref.html">Referências</a>
         </p>
     </div>
@@ -28,20 +29,17 @@
             <p>
                 Diferente do ARP neste caso o endereço necessário foi apenas o de um arquivo único na web (URL). Antes de realizar a captura com o Wireshark foi realizado um teste para ter certeza de que o comando "<code>Wget -URL-</code>" estava funcionando corretamente.
             </p>
+
+            <p><img style="height: 350px; width: 600px;" src="../Imagens/cmd_downloading_wget.PNG" alt="Download via Wget"></p>
+
             <p>
                 Uma fez que o processo foi concluido sem erros. Foi iniciada a captura com o filtro "<code>tcp and host -dominio do site-</code>" e então novamente o processo com o Wget foi repetido para que a captura fizesse efeito.
             </p>
 
             <h3>3.2 Estrutura do segmento TCP</h3>
             <p>Para mostrar sua compreensão do TCP, esboce uma figura do segmento TCP que você estudou. Sua figura deve mostrar a posição e o tamanho em bytes dos campos do cabeçalho TCP que você pôde observar usando o Wireshark. Não divida o campo Sinalizadores ou qualquer campo Opções e, se descobrir que alguns campos TCP compartilham um byte, agrupe-os. Como de costume, sua figura pode simplesmente mostrar a moldura como um retângulo longo e fino. Tente não olhar para a figura de um segmento TCP em seu texto ou na Internet; verifique-o depois para observar e investigar quaisquer diferenças.</p>
-            <h3>3.3 TCP: connection setup/teadown</h3>
-            <p>Desenhe um diagrama de sequência de tempo do handshake em seu trace, até e incluindo o primeiro pacote de dados (a solicitação HTTP GET) enviado por seu computador quando a conexão for estabelecida. Coloque seu computador no lado esquerdo e o servidor remoto no lado direito. Como de costume, o tempo passa de cima para baixo e as linhas cruzadas indicam os segmentos trocados.</p>
-            <h3>3.4 TCP: transferência de dados</h3>
-            <ol>
-                <li>Qual é a taxa de dados aproximada na direção do download em pacotes/segundo e bits/segundo, uma vez que a conexão TCP está funcionando bem?</li>
-                <li>Que porcentagem dessa taxa de download é conteúdo? Mostre seu cálculo. Para descobrir, veja um pacote de download típico; deve haver muitos pacotes de download grandes semelhantes. Você pode ver quanto tempo ele tem e quantos bytes de carga TCP ele contém.</li>
-                <li>Qual é a taxa de dados aproximada na direção de upload em pacotes/segundo e bits/segundo devido aos pacotes ACK?</li>
-            </ol>
+
+            <p><img style="height: 350px; width: 450px;" src="../Imagens/Tabela_cabecalho_TCP.png" alt="Cabeçalho TCP"></p>
         </div>
     </div>
 </body>
