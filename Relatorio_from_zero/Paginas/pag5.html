@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/pag5.css">
+    <title>Página 1</title>
+</head>
+<body>
+    <div class="divisao menu">
+        <p style="text-indent: 0;">
+            <a href="../relzero.html">Capa</a> <br>
+            <a href="../Paginas/sumario.html">Sumário</a> <br>
+            <a href="../Paginas/pag1.html">Página 1</a> <br>
+            <a href="../Paginas/pag2.html">Página 2</a> <br>
+            <a href="../Paginas/pag3.html">Página 3</a> <br>
+            <a href="../Paginas/pag4.html">Página 4</a> <br>
+            <a href="../Paginas/pag5.html">Página 5</a> <br>
+            <a href="../Paginas/pag6.html">Página 6</a> <br>
+            <a href="../Paginas/pag_ref.html">Referências</a>
+        </p>
+    </div>
+
+    <div class="divisao conteudo">
+        <div>
+            <h3>3.3.1 Opções de Conexão</h3>
+            <p>Quais opções TCP são transportadas nos pacotes SYN para o seu rastreamento?</p>
+            <p>No trace capturado os frames que continham o SYN, o campo de Opções que tinha 8 Bytes, era subdividido em 4 partes:</p>
+            <ul>
+                <li>Maximum Segment Size (4 Bytes)</li>
+                <li>Dois campos NOP (No-Operation) (1 Byte cada)</li>
+                <li>SACK permitted (Selective ACKknowledgment) (2 Bytes)</li>
+            </ul>
+
+            <h3>3.5 TCP: transferência de dados</h3>
+            <ol>
+                <li>Qual é a taxa de dados aproximada na direção do download em pacotes/segundo e bits/segundo, uma vez que a conexão TCP está funcionando bem?</li>
+                <p>
+                    Foi aplicado um filtro "<code>tcp.srcport == 80 && tcp.ack</code>" assim foram listados todos os pacotes de origem do server que está enviando o arquivo. Uma vez que a conexão está funcionando sem problemas, foram enviados ao total 339 pacotes, totalizando 395174 Bytes. Analisando os dados foi possível identificar uma média de 204,4 Pacotes/s e 1906Kb/s.
+                </p>
+                <li>Que porcentagem dessa taxa de download é conteúdo? Mostre seu cálculo. Para descobrir, veja um pacote de download típico; deve haver muitos pacotes de download grandes semelhantes. Você pode ver quanto tempo ele tem e quantos bytes de carga TCP ele contém.</li>
+                <p>
+                    Foi aplicado um filtro "<code>tcp.segment_data</code>" onde são mostrados apenas os frames que continham dados do arquivo de transferência. Com esse filtro aplicado então foi feita uma análise dos dados listados. Analisando em média quantos Bytes presentes nos pacotes não pertecem ao arquivo, e observando que praticamente todos eles contêm 54 Bytes de dados não pertencentes no arquivo e multiplicando pelo total de pacotes que o arquivo está presente (337 pacotes) temos que 18198 Bytes presentes nesses pacotes não são do arquivo, então subtraindo de 395KB temos que o tamanho do arquivo é de aproximadamente 376.8KB que inclusive se olharmos nas propriedades do arquivo será exatamente esse o valor encontrado.
+                </p>
+                <p><img style="padding-left: 75px;" src="../Imagens/Tamamanho_do_arquivo.png" alt="Propriedades do Arquivo"></p>
+                <p>
+                    Agora que sabemos o tamanho do arquivo e temos o total de Bytes de download podemos dizer que a porcentagem conteúdo na taxa de download é de aproximadamente 95,36%
+                </p>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

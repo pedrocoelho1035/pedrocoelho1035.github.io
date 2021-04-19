@@ -17,6 +17,8 @@
             <a href="../Paginas/pag2.html">Página 2</a> <br>
             <a href="../Paginas/pag3.html">Página 3</a> <br>
             <a href="../Paginas/pag4.html">Página 4</a> <br>
+            <a href="../Paginas/pag5.html">Página 5</a> <br>
+            <a href="../Paginas/pag6.html">Página 6</a> <br>
             <a href="../Paginas/pag_ref.html">Referências</a>
         </p>
     </div>
@@ -28,16 +30,11 @@
 
             <p><img style="height: 350px; width: 450px;" src="../Imagens/TCP.gif" alt="three way handshake"></p>
 
-            <h3>3.4 Opções de Conexão</h3>
-            <p>Quais opções TCP são transportadas nos pacotes SYN para o seu rastreamento?</p>
+            <h3>3.3 Teardown</h3>
+            <p>Desenhe uma imagem da finalização (teardown) em seu trace, começando quando o primeiro FIN ou RST é emitido até que a conexão seja concluída. Como antes, mostre a sequência e os números ACK em cada segmento. Se você tiver FINs, use a diferença de tempo para estimar o tempo de ida e volta.</p>
+            <p><img style="height: 350px; width: 450px;" src="../Imagens/TCP_teardown.gif" alt="TCP Teardown"></p>
 
-            <h3>3.5 TCP: transferência de dados</h3>
-            <ol>
-                <li>Qual é a taxa de dados aproximada na direção do download em pacotes/segundo e bits/segundo, uma vez que a conexão TCP está funcionando bem?</li>
-                <li>Que porcentagem dessa taxa de download é conteúdo? Mostre seu cálculo. Para descobrir, veja um pacote de download típico; deve haver muitos pacotes de download grandes semelhantes. Você pode ver quanto tempo ele tem e quantos bytes de carga TCP ele contém.</li>
-                <li>Qual é a taxa de dados aproximada na direção de upload em pacotes/segundo e bits/segundo devido aos pacotes ACK?</li>
-                <li>Se o segmento TCP recebido mais recentemente do servidor tiver um número de sequência X, então qual número ACK o próximo segmento TCP transmitido carregará?</li>
-            </ol>
+            <p style="font-size: 8pt; text-indent: 0; padding: 27px;">*Foi necessário utilizar o trace repassado na documentação pois foram feitas várias tentativas com diferentes arquivos e o último frame sempre estava sendo um RST emitido pela máquina local, assim, impossibilitando a análise de frames seguintes já que ele era o primeiro e último RST e sequer apareceu um FIN.</p>
         </div>
     </div>
 </body>

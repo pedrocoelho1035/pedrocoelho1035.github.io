@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/pag6.css">
+    <title>Página 1</title>
+</head>
+<body>
+    <div class="divisao menu">
+        <p style="text-indent: 0;">
+            <a href="../relzero.html">Capa</a> <br>
+            <a href="../Paginas/sumario.html">Sumário</a> <br>
+            <a href="../Paginas/pag1.html">Página 1</a> <br>
+            <a href="../Paginas/pag2.html">Página 2</a> <br>
+            <a href="../Paginas/pag3.html">Página 3</a> <br>
+            <a href="../Paginas/pag4.html">Página 4</a> <br>
+            <a href="../Paginas/pag5.html">Página 5</a> <br>
+            <a href="../Paginas/pag6.html">Página 6</a> <br>
+            <a href="../Paginas/pag_ref.html">Referências</a>
+        </p>
+    </div>
+
+    <div class="divisao conteudo">
+        <div>
+            <ol start="3">
+                <li>
+                    Qual é a taxa de dados aproximada na direção de upload em pacotes/segundo e bits/segundo devido aos pacotes ACK?
+                </li>
+                <p>
+                    Foi aplicado um filtro "<code>tcp.dstport == 80 && tcp.ack</code>" assim foram listados todos os pacotes de origem da máquina que está recebendo o arquivo. Assim foi possível analisar os dados de forma mais clara e foi identificado que foram enviados ao total 131 pacotes, totalizando 7296 Bytes. E também foi possível identificar uma média de 66,6 Pacotes/s e 29Kb/s.
+                </p>
+
+                <li>
+                    Se o segmento TCP recebido mais recentemente do servidor tiver um número de sequência X, então qual número ACK o próximo segmento TCP transmitido carregará?
+                </li>
+                <p>
+                    O número próximo número ACK a ser transmitido para o servidor recebe o valor do último número de sequencia recebido do servidor + o número de bytes dos dados transmitidos (segment_data) no último pacote.
+                    Por exemplo, o servidor eviou um pacote com Seq = 35042 e ACK = 215 e um segment_data de 1440 Bytes. Considerando que logo em seguida seja transmitido um pacote para o servidor, este irá conter um Seg = 215 e um ACK = 36482.
+                </p>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
