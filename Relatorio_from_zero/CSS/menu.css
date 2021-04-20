@@ -31,10 +31,15 @@
 .conteudo{
     
     max-width: 750px;
+    min-height: 800px;
     padding: 0 50px;
 
 }
 
 a:visited{
     color: blue;
+}
+
+a{
+    text-decoration: none;
 }

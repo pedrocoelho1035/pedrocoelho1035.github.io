@@ -25,9 +25,9 @@
     
     <div class="divisao conteudo">
         <div>
-            <h2>3. TCP</h2>
+            <h2 id="3.0">3. TCP</h2>
             
-            <h3>3.1 Captura de um trace e Inspecionando o trace</h3>
+            <h3 id="3.1">3.1 Captura de um trace e Inspecionando o trace</h3>
             <p>
                 Diferente do ARP neste caso o endereço necessário foi apenas o de um arquivo único na web (URL). Antes de realizar a captura com o Wireshark foi realizado um teste para ter certeza de que o comando "<code>Wget -URL-</code>" estava funcionando corretamente.
             </p>
@@ -38,7 +38,7 @@
                 Uma fez que o processo foi concluido sem erros. Foi iniciada a captura com o filtro "<code>tcp and host -dominio do site-</code>" e então novamente o processo com o Wget foi repetido para que a captura fizesse efeito.
             </p>
 
-            <h3>3.2 Estrutura do segmento TCP</h3>
+            <h3 id="3.2">3.2 Estrutura do segmento TCP</h3>
             <p>Para mostrar sua compreensão do TCP, esboce uma figura do segmento TCP que você estudou. Sua figura deve mostrar a posição e o tamanho em bytes dos campos do cabeçalho TCP que você pôde observar usando o Wireshark. Não divida o campo Sinalizadores ou qualquer campo Opções e, se descobrir que alguns campos TCP compartilham um byte, agrupe-os. Como de costume, sua figura pode simplesmente mostrar a moldura como um retângulo longo e fino. Tente não olhar para a figura de um segmento TCP em seu texto ou na Internet; verifique-o depois para observar e investigar quaisquer diferenças.</p>
 
             <p>Foi utilizado um frame de comprimento (Length) 1494 Bytes:</p>
